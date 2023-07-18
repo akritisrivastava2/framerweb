@@ -1,13 +1,9 @@
 import React from "react";
-import { motion, useScroll, useSpring } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 
 const About = () => {
   const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001,
-  });
+  
   return (
     <>
       <motion.div
@@ -25,7 +21,7 @@ const About = () => {
             <p>
             Additionally, my experience extends to full-stack MERN projects, where I have harnessed my skills as a web developer. My main programming skills encompass C and C++, while my development expertise spans HTML, CSS, JavaScript, MongoDB, React, and frameworks like Node.js and Express. Moreover, I possess additional proficiency in MySQL and Git, enhancing my abilities to deliver efficient and collaborative solutions.
             </p>
-            
+            <p>I have solved more than 700+ questions on different coding platforms .</p>
             
               
             <h2>SKILLS</h2>
@@ -40,6 +36,7 @@ Languages:
 <dt>Tools:</dt><dd>Github</dd>
               </dl>
             </p>
+            
             
           </article>
         </>
